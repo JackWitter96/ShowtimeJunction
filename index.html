@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Showtime Junction</title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css" />
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="sidebar-container">
+    <i class="bi bi-list mobile-nav-toggle"></i>
+    <header id="header" class="header-nav">
+      <div class="d-flex flex-column">
+        <nav id="navbar" class="nav-menu navbar">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active text-light" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" id="top-100-series-tab" data-bs-toggle="tab" href="#top100Series"
+                role="tab" aria-controls="top100Series" aria-selected="false">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" id="top-100-movies-tab" data-bs-toggle="tab" href="#top100Movies"
+                role="tab" aria-controls="top100Movies" aria-selected="false">Movies</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+
+
+  <main role="main" class="ml-sm-auto main">
+    <div class="header text-center">
+
+
+      <!-- Title -->
+      <div class="title">
+        <h1 id="pageTitle" class="text-light">Showtime Junction</h1>
+      </div>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content mask mt-3" id="myTabsContent">
+      <!-- Home Tab -->
+      <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row">
+          <div class="col mb-4 position-relative">
+            <img class="home-page-breaking-bad image-overlay clickable-image" src="./assets/img/breaking-bad.jpg"
+              alt="Breaking Bad Image" onclick="scrollToTab('top-100-series-tab')">
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white fw-bold fs-4">
+              Series
+            </div>
+          </div>
+          <div class="col mb-4 position-relative">
+            <img class="home-page-batman image-overlay clickable-image" src="./assets/img/batman.jpg" alt="Batman Image"
+              onclick="scrollToTab('top-100-movies-tab')">
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white fw-bold fs-4">
+              Movies
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- top100Series Tab -->
+      <div class="tab-pane fade" id="top100Series" role="tabpanel" aria-labelledby="top-100-series-tab">
+      </div>
+
+      <!-- top 100 Movies Tab -->
+      <div class="tab-pane fade" id="top100Movies" role="tabpanel" aria-labelledby="top-100-movies-tab">
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/js/fetchTop100Movies.js"></script>
+  <script src="assets/js/fetchTop100Series.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
